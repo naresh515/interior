@@ -69,8 +69,8 @@ $(document).ready(function () {
 
 function videoPlay() {
     if (video.paused || video.ended) {
-		video.play();
-	} else {
-		video.pause();
-	}
+        video.play();
+    } else {
+        video.pause();
+    }
 }

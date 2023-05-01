@@ -1,10 +1,10 @@
 @font-face {
-    font-family: DM Serif Display;
-    src: url(../DMSerifDisplay-Regular.ttf);
+    font-family: 'DM Serif Display';
+    src: url(../dmSerif/DMSerifDisplay-Regular.ttf);
 }
 
 @font-face {
-    font-family: Jost;
+    font-family: 'Jost';
     src: url(../static/Jost-Light.ttf);
 }
 
@@ -34,6 +34,7 @@ body {
     max-width: 100%;
     margin: 0 auto;
     box-sizing: border-box;
+    cursor: default;
 }
 
 .main-container {
@@ -77,14 +78,15 @@ body {
     font-family: 'Jost';
     font-size: 20px;
     padding: 0px 15px;
-    font-weight: 600;
+    font-weight: 400;
     transition: left .5s ease-in-out;
 }
 
-.nav-links li:hover,
+.nav-links li a:hover,
 .footer-text-link li:hover,
 .img-about-text a:hover {
-    text-decoration: underline;
+    text-decoration: none;
+    color: var(--brown);
     transition: left .5s ease-in-out;
 }
 
@@ -237,7 +239,7 @@ li a {
 .intro-heading {
     font-family: 'DM Serif Display';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 65px;
     line-height: 81px;
     display: flex;
@@ -271,6 +273,9 @@ li a {
     box-shadow: 0px 10px 20px var(--rgba);
     border-radius: 18px;
     color: var(--light);
+    font-family: 'jost';
+    font-weight: 400;
+    font-size: 18px;
 }
 
 .arrows,
@@ -313,7 +318,7 @@ section {
 .topic-heading {
     font-family: 'DM Serif Display';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 25px;
     line-height: 31px;
     display: flex;
@@ -326,7 +331,7 @@ section {
     font-family: 'Jost';
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 22px;
     line-height: 33px;
     display: flex;
     align-items: center;
@@ -339,7 +344,7 @@ section {
 .topic-button {
     font-family: 'Jost';
     font-style: normal;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 18px;
     line-height: 22px;
     display: flex;
@@ -402,7 +407,7 @@ section {
 .outside p {
     font-family: 'Jost';
     font-style: normal;
-    font-weight: 700;
+    font-weight: 400;
     font-size: 24px;
     line-height: 36px;
     display: flex;
@@ -445,6 +450,9 @@ button {
     box-shadow: 0px 10px 20px var(--rgba);
     border-radius: 18px;
     color: var(--light);
+    font-family: 'jost';
+    font-weight: 400;
+    font-size: 18px;
     margin: 35px 0px 0px;
 }
 
@@ -457,7 +465,7 @@ button {
     height: 500px;
     background: var(--gray);
     border-radius: 0px 326.5px 0px 123px;
-    background-image: url(./img/Photo.jpg);
+    background-image: url(../img/Photo.jpg);
     background-position: center;
     background-size: contain;
 }
@@ -473,7 +481,7 @@ button {
 .testimonial-heading {
     font-family: 'DM Serif Display';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 50px;
     line-height: 62px;
     letter-spacing: 0.02em;
@@ -518,7 +526,7 @@ button {
     margin: 0px;
     font-family: 'DM Serif Display';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 25px;
     line-height: 38px;
     display: flex;
@@ -580,7 +588,7 @@ button {
 .project-heading h4 {
     font-family: 'DM Serif Display';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 50px;
     line-height: 62px;
     display: flex;
@@ -588,7 +596,7 @@ button {
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--thinLight);
-    margin: 0px;
+    margin: 0px 0px 8px;
 }
 
 .project-heading p {
@@ -650,7 +658,7 @@ button {
 .project-text h4 {
     font-family: 'DM Serif Display';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 25px;
     line-height: 31px;
     display: flex;
@@ -694,8 +702,6 @@ button.project-btn {
 .counter {
     background-color: var(--multiple);
     margin: 100px auto;
-    width: 1370px;
-    margin-left: -82px;
 }
 
 .counter-details {
@@ -719,7 +725,7 @@ button.project-btn {
 .counter-text h4 {
     font-family: 'DM Serif Display';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 85px;
     line-height: 106px;
     letter-spacing: 0.02em;
@@ -762,7 +768,7 @@ button.project-btn {
 .blog-heading h4 {
     font-family: 'DM Serif Display';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 50px;
     line-height: 62px;
     display: flex;
@@ -842,7 +848,7 @@ button.project-btn {
 .blog-img-text h4 {
     font-family: 'DM Serif Display';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 25px;
     line-height: 31px;
     letter-spacing: 0.02em;
@@ -950,7 +956,7 @@ button.project-btn {
 .heading {
     font-family: 'DM Serif Display';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 25px;
     line-height: 31px;
     color: var(--thinLight);
@@ -1001,7 +1007,6 @@ hr {
 
 /* blog-page */
 .main-header img {
-    height: 328px;
     width: 100%;
 }
 
@@ -1020,7 +1025,7 @@ hr {
 .img-about-heading {
     font-family: 'DM Serif Display';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 50px;
     line-height: 62px;
     display: flex;
@@ -1043,7 +1048,7 @@ hr {
 .sub-section-heading {
     font-family: 'DM Serif Display';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 25px;
     line-height: 125%;
     display: flex;
@@ -1080,7 +1085,7 @@ hr {
 .sub-section-btn:hover,
 button.project-btn:hover {
     transition: all .5s ease-in-out;
-    background-color: var(--red);
+    background-color: var(--brown);
     color: var(--light);
 }
 
@@ -1104,7 +1109,6 @@ button.project-btn:hover {
 
 .card-details {
     padding: 21px;
-    background: var(--darkWhite);
     border: 1px solid var(--darkWhite);
     box-shadow: 0px 10px 30px var(--rgbColor);
     border-radius: 62px;
@@ -1192,7 +1196,7 @@ span.current.prev {
     height: 62px;
     font-family: 'DM Serif Display';
     font-style: italic;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 85px;
     line-height: 106px;
     text-align: center;
@@ -1205,7 +1209,7 @@ span.current.prev {
     height: 132px;
     font-family: 'DM Serif Display';
     font-style: italic;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 35px;
     line-height: 125%;
     display: flex;
@@ -1213,6 +1217,7 @@ span.current.prev {
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--thinLight);
+    margin: 27px 0px 34px;
 }
 
 .author {
@@ -1240,14 +1245,17 @@ span.current.prev {
     gap: 30px;
 }
 
+.icons-img {
+    gap: 33px;
+}
+
 .result {
     margin: 100px 0px 100px;
 }
 
 /* team */
 .team {
-    margin-left: -92px;
-    width: 1380px;
+    width: 100%;
     background-color: var(--multiple);
 }
 
@@ -1279,7 +1287,7 @@ span.current.prev {
     height: 63.47px;
     font-family: 'DM Serif Display';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 25px;
     line-height: 38px;
     display: flex;
@@ -1330,7 +1338,7 @@ span.current.prev {
     height: 126px;
     font-family: 'DM Serif Display';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 50px;
     line-height: 62px;
     display: flex;
@@ -1365,12 +1373,12 @@ span.current.prev {
 .blog-heading {
     font-family: 'DM Serif Display';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 50px;
     line-height: 125%;
     letter-spacing: 0.02em;
     color: var(--thinLight);
-    margin: 0 auto;
+    margin: 0 auto 52px;
 }
 
 .blog-container img {
@@ -1406,7 +1414,7 @@ span.current.prev {
 .point {
     font-family: 'DM Serif Display';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 20px;
     line-height: 125%;
     letter-spacing: 0.02em;
@@ -1446,7 +1454,7 @@ span.current.prev {
 .quetos {
     font-family: 'DM Serif Display';
     font-style: italic;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 200px;
     line-height: 125%;
     text-align: center;
@@ -1456,7 +1464,7 @@ span.current.prev {
 .queto-text {
     font-family: 'DM Serif Display';
     font-style: italic;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 25px;
     line-height: 125%;
     text-align: center;
@@ -1520,12 +1528,14 @@ span.current.prev {
 }
 
 .search-box {
-    padding: 34px 33px;
+    padding: 34px 0px;
     background: var(--multiple);
     border-radius: 20px;
     border: none;
     outline: none;
     position: relative;
+    text-indent: 40px;
+    width: 100%;
 }
 
 ::placeholder {
@@ -1544,7 +1554,7 @@ span.current.prev {
 .search-icon {
     position: absolute;
     top: 50%;
-    left: 50%;
+    right: 15px;
     transform: translate(-50%, -50%);
 }
 
@@ -1555,7 +1565,7 @@ span.current.prev {
 .sidebar-heading {
     font-family: 'DM Serif Display';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 25px;
     line-height: 125%;
     display: flex;
@@ -1568,7 +1578,7 @@ span.current.prev {
 .sub-heading-blogDetails {
     font-family: 'DM Serif Display';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 20px;
     line-height: 125%;
     display: flex;
@@ -1761,7 +1771,7 @@ span.current.prev {
 .error-heading {
     font-family: 'DM Serif Display';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 250px;
     line-height: 312px;
     display: flex;
@@ -1772,7 +1782,7 @@ span.current.prev {
 .error-text {
     font-family: 'DM Serif Display';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 35px;
     line-height: 52px;
     display: flex;
@@ -1791,6 +1801,9 @@ span.current.prev {
     align-items: center;
     padding: 26px 54px;
     gap: 10px;
+    font-family: 'Jost';
+    font-weight: 400;
+    font-size: 18px;
 }
 
 .error-btn a {
@@ -1815,7 +1828,7 @@ span.current.prev {
 .section-heading {
     font-family: 'DM Serif Display';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 50px;
     line-height: 150%;
     text-align: center;
@@ -1829,7 +1842,7 @@ span.current.prev {
 .accoridon-button {
     font-family: 'DM Serif Display';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 25px;
     line-height: 150%;
     letter-spacing: 0.01em;
@@ -1909,7 +1922,7 @@ span.current.prev {
 .changelog-heading {
     font-family: 'DM Serif Display';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 50px;
     line-height: 150%;
     text-align: center;
@@ -1955,7 +1968,7 @@ span.current.prev {
 .font-heading {
     font-family: 'DM Serif Display';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 35px;
     line-height: 150%;
     letter-spacing: 0.01em;
@@ -2036,7 +2049,7 @@ span.current.prev {
 .licence-heading {
     font-family: 'DM Serif Display';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 50px;
     line-height: 150%;
     letter-spacing: 0.01em;
@@ -2077,7 +2090,7 @@ span a {
 .password-heading {
     font-family: 'DM Serif Display';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 50px;
     line-height: 75px;
     text-align: center;
@@ -2125,7 +2138,7 @@ span a {
 .price-heading {
     font-family: 'DM Serif Display';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 25px;
     line-height: 38px;
     text-align: center;
@@ -2136,13 +2149,22 @@ span a {
 .amount {
     font-family: 'DM Serif Display';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 25px;
     line-height: 38px;
     text-align: center;
     letter-spacing: 0.01em;
     color: var(--thinLight);
     margin-bottom: 22px;
+}
+
+.pagination ul li:hover {
+    background-color: var(--brown);
+}
+
+.pagination ul li:hover a,
+.pagination ul li:hover .current {
+    color: var(--light);
 }
 
 .price-description {
@@ -2154,6 +2176,7 @@ span a {
     text-align: center;
     letter-spacing: 0.01em;
     color: var(--lightGray);
+    margin: 0px 0px 28px;
 }
 
 .main-content-btn {
@@ -2165,7 +2188,12 @@ span a {
     background: var(--thinLight);
     box-shadow: 0px 10px 20px var(--rgba);
     border-radius: 18px;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Jost';
     color: var(--light);
+    border: none;
+    outline: none;
 }
 
 .submit-btn-price {
@@ -2213,7 +2241,7 @@ span a {
 .project-details-heading {
     font-family: 'DM Serif Display';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 22px;
     line-height: 150%;
     letter-spacing: 0.01em;
@@ -2235,7 +2263,7 @@ span a {
 .about-project-heading {
     font-family: 'DM Serif Display';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 50px;
     line-height: 125%;
     letter-spacing: 0.02em;
@@ -2296,7 +2324,7 @@ span a {
 .details-heading {
     font-family: 'DM Serif Display';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 50px;
     line-height: 62px;
     display: flex;
@@ -2397,7 +2425,7 @@ span a {
 .points-heading {
     font-family: 'DM Serif Display';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 50px;
     line-height: 62px;
     display: flex;
@@ -2444,7 +2472,7 @@ span a {
 .main-content-heading {
     font-family: 'DM Serif Display';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 50px;
     line-height: 62px;
     display: flex;
@@ -2480,7 +2508,7 @@ span a {
 .contact-text h4 {
     font-family: 'DM Serif Display';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 50px;
     line-height: 62px;
     text-align: center;
@@ -2505,6 +2533,9 @@ span a {
     padding: 26px 37px;
     color: var(--light);
     margin-top: 30px;
+    font-family: 'Jost';
+    font-weight: 400;
+    font-size: 18px;
 }
 
 .icon {
@@ -2544,7 +2575,7 @@ span a {
     height: 80px;
     font-family: 'DM Serif Display';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 50px;
     line-height: 62px;
     text-align: center;
@@ -2606,7 +2637,7 @@ span a {
     height: 102px;
     font-family: 'DM Serif Display';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 120px;
     line-height: 150px;
     display: flex;
@@ -2620,7 +2651,7 @@ span a {
     height: 44px;
     font-family: 'DM Serif Display';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 35px;
     line-height: 44px;
     text-align: center;
@@ -2680,7 +2711,7 @@ span a {
 .text-img-heading {
     font-family: 'DM Serif Display';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 25px;
     line-height: 150%;
     display: flex;
@@ -2747,7 +2778,7 @@ span a {
 .mamberName {
     font-family: 'DM Serif Display';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 50px;
     line-height: 150%;
     text-align: center;
@@ -2825,9 +2856,9 @@ span a {
 }
 
 .mamber-img img {
-    height: 689px;
     border-radius: 50px;
     width: 590px;
+    object-fit: cover;
 }
 
 .subTitle {
@@ -2840,7 +2871,7 @@ span a {
 .sub-heading {
     font-family: 'DM Serif Display';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 50px;
     line-height: 150%;
     text-align: center;
@@ -2861,7 +2892,7 @@ span a {
 .sub-skill {
     font-family: 'DM Serif Display';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 25px;
     line-height: 150%;
     text-align: center;
@@ -2870,7 +2901,7 @@ span a {
 }
 
 .sub-title {
-    font-weight: 600;
+    font-weight: 400;
 }
 
 .time-line {
@@ -2940,7 +2971,7 @@ span a {
 .licence-changelog-heading {
     font-family: 'DM Serif Display';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 50px;
     line-height: 150%;
     text-align: center;
@@ -2975,10 +3006,15 @@ span a {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 50px;
+    row-gap: 0px;
+}
+
+.arr {
+    color: var(--thinLight);
 }
 
 .sercive-work-topic {
-    padding: 20px;
+    padding: 83px 20px;
 }
 
 /* teamsingle end */
@@ -3007,7 +3043,7 @@ span a {
 .tab-btn {
     font-family: 'Jost';
     font-style: normal;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 18px;
     line-height: 125%;
     display: flex;
@@ -3061,7 +3097,7 @@ span a {
 .pagination-text-heading {
     font-family: 'DM Serif Display';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 25px;
     line-height: 125%;
     display: flex;
@@ -3132,7 +3168,7 @@ span a {
     border-radius: 18px;
     font-family: 'Jost';
     font-style: normal;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 18px;
     line-height: 125%;
     letter-spacing: 0.02em;
@@ -3206,22 +3242,59 @@ span a {
     font-family: FontAwesome;
     content: "";
     position: absolute;
-    right: -24px;
-    top: -12px;
+    right: 0px;
+    top: -10px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    border: 3px solid var(--brown);
-    height: 22px;
-    width: 22px;
+    border: 5px solid var(--brown);
+    height: 14px;
+    width: 14px;
+    background-color: var(--light);
+}
+
+.bio {
+    margin: 0px auto 100px;
 }
 
 .img-width-change img {
     width: 1375px;
 }
 
-@media screen and (min-width: 320px) and (max-width: 800px) {
+.presnt {
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 150%;
+    letter-spacing: 0.01em;
+    color: var(--lightGray);
+}
+
+.sub-title-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.color3 {
+    width: 66%;
+}
+
+.color4 {
+    width: 96%;
+}
+
+.color5 {
+    width: 76%;
+}
+
+.mail-text-heading {
+    width: 670px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 900px) {
     .container {
         width: 90%;
         margin: 0 auto;
@@ -3885,6 +3958,10 @@ span a {
         font-size: 18px;
     }
 
+    .main-header img {
+        height: 200px;
+    }
+
     .pagination-btn {
         padding: 10px 15px;
     }
@@ -3908,7 +3985,7 @@ span a {
 
 }
 
-@media screen and (min-width: 450px) and (max-width: 800px) {
+@media screen and (min-width: 450px) and (max-width: 900px) {
     .button-group {
         width: 100%;
         justify-content: space-evenly;
