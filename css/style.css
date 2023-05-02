@@ -84,7 +84,9 @@ body {
 
 .nav-links li a:hover,
 .footer-text-link li:hover,
-.img-about-text a:hover {
+.footer-text-link li a:hover,
+.img-about-text a:hover,
+.nav-links span:hover {
     text-decoration: none;
     color: var(--brown);
     transition: left .5s ease-in-out;
@@ -281,7 +283,7 @@ li a {
 .arrows,
 .arrow {
     color: var(--brown);
-    transition: all .5s ease-in-out;
+    transition: all .2s ease-in-out;
 }
 
 .banner-image img {
@@ -1098,6 +1100,7 @@ button.project-btn:hover {
     display: flex;
     align-items: center;
     gap: 65px;
+    margin-top: 33px;
 }
 
 .sub-section-icon {
@@ -1173,9 +1176,7 @@ span.current.prev {
 /* ABout Page */
 
 .main-section {
-    display: flex;
     margin: 100px auto;
-    justify-content: center;
 }
 
 .icon img {
@@ -1427,17 +1428,27 @@ span.current.prev {
 
 .tag-btn {
     padding: 13px 25px;
-    background: var(--thinLight);
+    background: var(--multiple);
     border-radius: 10px;
     border: none;
     outline: none;
-    color: var(--light);
+    color: var(--dark);
+    padding: 13px 22px;
+}
+
+.card-details-heading {
+    font-family: 'DM Serif Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 125%;
+    letter-spacing: 0.02em;
+    color: #292F36;
 }
 
 .tags-btn {
-    padding: 13px 22px;
-    background: var(--multiple);
-    color: var(--dark);
+    background: var(--thinLight);
+    color: var(--light);
 }
 
 .queto {
@@ -1590,7 +1601,7 @@ span.current.prev {
 .dates {
     display: flex;
     justify-content: flex-end;
-    margin-bottom: 6px;
+    margin: 34px 0px 6px;
 }
 
 .container-item-pera {
@@ -1635,7 +1646,7 @@ span.current.prev {
 }
 
 .links {
-    margin: 34px 0px 35px;
+    margin: 0px 0px 35px;
 }
 
 .right-side-tag {
@@ -1885,7 +1896,7 @@ span.current.prev {
 
 .accordion-item.active-menu .arrow-icon {
     transform: rotate(90deg);
-    transition: all .5s ease-in-out;
+    transition: all .2s ease-in-out;
 }
 
 .accordion-item.active-menu .panel {
@@ -2727,8 +2738,12 @@ span a {
     line-height: 27px;
 }
 
-.cards {
+.card {
     margin: 100px auto;
+}
+
+.cards {
+    margin-top: 33px;
 }
 
 /* team end */
@@ -3311,6 +3326,12 @@ span a {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
     padding: 30px 0px;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    left: 0;
+    right: 0;
+    position: fixed;
 }
 
 @media screen and (min-width: 320px) and (max-width: 900px) {
@@ -3671,9 +3692,9 @@ span a {
         padding: 0px;
     }
 
-    /* .remove-scroll {
+    .remove-scroll {
         overflow: hidden;
-    } */
+    }
 
     .search-input {
         margin: 0px;

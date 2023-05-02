@@ -39,6 +39,16 @@ $(document).ready(function () {
             sticky.removeClass('fixed');
         }
     });
+
+    $('.btn-group').click(function () {
+        $('.btn-group').removeClass("tags-btn");
+        $(this).addClass("tags-btn")
+    })
+    $('.tag-btn-bottom').click(function () {
+        $('.tag-btn-bottom').removeClass("tags-btn");
+        $(this).addClass("tags-btn")
+    })
+
     $('.client-logo-img').slick({
         slidesToShow: 4,
         slidesToScroll: 1,
