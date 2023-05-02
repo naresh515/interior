@@ -32,19 +32,11 @@ $(document).ready(function () {
 
     $(window).scroll(function () {
         const scroll = $(window).scrollTop();
-        if (scroll >= 800) {
-            $('.count').each(function () {
-                var countValue = parseInt($(this).text());
-                $(this).prop('Counter', 0).animate({
-                    Counter: countValue
-                }, {
-                    duration: 3000,
-                    easing: 'swing',
-                    step: function (now) {
-                        $(this).text(Math.ceil(now));
-                    }
-                });
-            });
+        if (scroll >= 1) {
+            sticky.addClass('fixed');
+        }
+        else {
+            sticky.removeClass('fixed');
         }
     });
 
@@ -67,6 +59,7 @@ $(document).ready(function () {
         infinite: true,
         cssEase: 'linear'
     })
+    
     $('.count').each(function () {
         var countValue = parseInt($(this).text());
         $(this).prop('Counter', 0).animate({

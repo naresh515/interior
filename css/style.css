@@ -1618,7 +1618,7 @@ span.current.prev {
     margin: 34px 0px 6px;
 }
 
-.container-item-pera {
+.container-item-pera a {
     font-family: 'Jost';
     font-style: normal;
     font-weight: 400;
@@ -1628,6 +1628,7 @@ span.current.prev {
     align-items: center;
     letter-spacing: 0.01em;
     color: var(--lightGray);
+    text-decoration: none;
 }
 
 .sidebar-line {
@@ -3073,9 +3074,8 @@ span a {
     border: 1px solid var(--brown);
     outline: none;
     display: flex;
-    gap: 10px;
     padding: 0px;
-    justify-content: center;
+    justify-content: space-between;
     width: 854px;
     margin: 0 auto;
     height: 75px;
@@ -3333,7 +3333,6 @@ span a {
 }
 
 .mega {
-    column-count: 3;
     padding: 0px;
     position: absolute;
     left: 0;
@@ -3358,6 +3357,14 @@ span a {
 }
 
 @media screen and (min-width: 320px) and (max-width: 900px) {
+    .mega {
+        position: unset;
+    }
+
+    .mega-menu:hover .mega {
+        position: unset;
+    }
+
     .container {
         width: 90%;
         margin: 0 auto;
@@ -4047,7 +4054,7 @@ span a {
 
 @media screen and (min-width: 320px) and (max-width: 450px) {
     .tab-btn {
-        padding: 0px;
+        padding: 0px 4px;
         font-size: 15px;
         border-radius: 10px;
     }
@@ -4062,7 +4069,7 @@ span a {
 @media screen and (min-width: 450px) and (max-width: 900px) {
     .button-group {
         width: 100%;
-        justify-content: space-evenly;
+        justify-content: space-between;
     }
 
     .tab-btn {
