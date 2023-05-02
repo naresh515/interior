@@ -1441,13 +1441,19 @@ span.current.prev {
 }
 
 .tag-btn {
-    padding: 13px 25px;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Jost';
     background: var(--multiple);
     border-radius: 10px;
     border: none;
     outline: none;
     color: var(--dark);
     padding: 13px 22px;
+}
+
+.about-main-section {
+    display: flex;
 }
 
 .card-details-heading {

@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    var isScrolled = false;
     const sticky = $('.nav');
 
 
@@ -38,6 +39,21 @@ $(document).ready(function () {
         else {
             sticky.removeClass('fixed');
         }
+        if (scroll >= 4000 && isScrolled == false) {
+            isScrolled = true
+            $('.count').each(function () {
+                var countValue = parseInt($(this).text());
+                $(this).prop('Counter', 0).animate({
+                    Counter: countValue
+                }, {
+                    duration: 3000,
+                    easing: 'swing',
+                    step: function (now) {
+                        $(this).text(Math.ceil(now));
+                    }
+                });
+            });
+        }
     });
 
     $('.btn-group').click(function () {
@@ -59,19 +75,6 @@ $(document).ready(function () {
         infinite: true,
         cssEase: 'linear'
     })
-    
-    $('.count').each(function () {
-        var countValue = parseInt($(this).text());
-        $(this).prop('Counter', 0).animate({
-            Counter: countValue
-        }, {
-            duration: 3000,
-            easing: 'swing',
-            step: function (now) {
-                $(this).text(Math.ceil(now));
-            }
-        });
-    });
 
     $(".play-btn").click(function () {
         $(".play-btn").toggleClass("pause-btn")
