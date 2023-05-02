@@ -158,8 +158,20 @@ li a {
     color: var(--dark);
 }
 
-.search-box2::-ms-input-placeholder {
-    color: var(--dark);
+.form-contactUs .form-section::placeholder {
+    color: var(--lightGray);
+    font-size: 22px;
+    line-height: 150%;
+    font-weight: 400;
+    font-family: 'Jost';
+}
+
+.form-contactUs .form-section:-ms-input-placeholder {
+    color: var(--lightGray);
+    font-size: 22px;
+    line-height: 150%;
+    font-weight: 400;
+    font-family: 'Jost';
 }
 
 .img-about-text a {
@@ -1314,6 +1326,9 @@ span.current.prev {
 }
 
 /* mail-box */
+.contect-page {
+    margin: 0 auto !important;
+}
 
 .mail-box {
     justify-content: center;
@@ -1351,8 +1366,7 @@ span.current.prev {
 }
 
 .massage-section {
-    width: 795px;
-    height: 175px;
+    width: 830px;
 }
 
 .form {
@@ -1632,7 +1646,7 @@ span.current.prev {
 }
 
 .btn-group {
-    margin: 0px 10px 20px 0px;
+    margin: 0px 9px 20px 0px;
 }
 
 .sidebar-text {
@@ -1750,7 +1764,7 @@ span.current.prev {
 }
 
 .massage {
-    margin-bottom: 130px;
+    margin-bottom: 10px;
 }
 
 
@@ -2864,6 +2878,19 @@ span a {
     color: var(--lightGray);
 }
 
+.btn-text a {
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.01em;
+    color: var(--lightGray);
+    text-decoration: none;
+}
+
 .mamber {
     display: flex;
     flex-direction: column;
@@ -3148,10 +3175,6 @@ span a {
     border-bottom: 1px solid;
     outline: none;
     background-color: transparent;
-}
-
-.form-section-massage {
-    padding: 0px 0px 130px;
 }
 
 .form-section::placeholder {
