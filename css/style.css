@@ -3501,6 +3501,10 @@ span a {
     width: 547px;
 }
 
+.team-page-card {
+    margin: 100px auto;
+}
+
 @media screen and (min-width: 320px) and (max-width: 900px) {
     .mega {
         position: unset;
@@ -3595,6 +3599,11 @@ span a {
 
     .blog-img img {
         width: 90%;
+    }
+
+    .team-header-heading {
+        font-size: 25px;
+        text-align: center;
     }
 
     .work,
