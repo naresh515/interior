@@ -418,7 +418,7 @@ section {
     font-size: 32px;
 }
 
-.outside p {
+.outside p a {
     font-family: 'Jost';
     font-style: normal;
     font-weight: 400;
@@ -429,6 +429,7 @@ section {
     letter-spacing: 0.01em;
     color: var(--lightGray);
     margin: 0px;
+    text-decoration: none;
 }
 
 .outside h3 {
@@ -3206,6 +3207,10 @@ span a {
     display: none !important;
 }
 
+.remove-scroll {
+    overflow: hidden;
+}
+
 .acco-items {
     background: var(--light);
     border: 1px solid var(--brown);
@@ -3361,6 +3366,66 @@ span a {
     left: 0;
     right: 0;
     position: fixed;
+}
+
+.img-overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 10;
+    display: none;
+    position: fixed;
+    top: 0;
+}
+
+.img-overlay-open {
+    display: flex;
+}
+
+.content {
+    margin: auto;
+    width: 100%;
+}
+
+.btn-wrap {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.zoom-img-overlay .popup {
+    width: 100%;
+    height: 500px;
+}
+
+.zoom-img-overlay .popup img {
+    height: 500px;
+    width: 100%;
+    background-position: center;
+}
+
+.zoom-img-overlay .popup .search-btn {
+    display: none;
+}
+
+.zoom-img-overlay {
+    display: flex;
+    align-items: flex-start;
+    width: 90%;
+}
+
+.zoom-img-overlay div {
+    transition: all 0.5s ease-in-out;
+}
+
+.close-btn {
+    border: none;
+    order: 1;
+    font-size: 25px;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    width: 40px !important;
 }
 
 @media screen and (min-width: 320px) and (max-width: 900px) {

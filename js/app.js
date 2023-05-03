@@ -65,6 +65,18 @@ $(document).ready(function () {
         $(this).addClass("tags-btn")
     })
 
+    $('.popup').click(function () {
+        $(".img-overlay").addClass("img-overlay-open");
+        $(this).clone().appendTo(".zoom-img-overlay");
+        $("body").addClass("remove-scroll");
+    });
+
+    $(".close-btn").click(function () {
+        $(".img-overlay").removeClass("img-overlay-open");
+        $(".zoom-img-overlay").empty();
+        $("body").removeClass("remove-scroll");
+    });
+
     $('.client-logo-img').slick({
         slidesToShow: 4,
         slidesToScroll: 1,
