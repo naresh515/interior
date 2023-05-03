@@ -55,8 +55,8 @@ body {
 .nav {
     display: flex;
     justify-content: space-between;
-    margin: 0px 0px 40px;
-    height: 70px;
+    margin: 20px 0px;
+    max-height: 50px;
     color: var(--thinLight);
 }
 
@@ -79,7 +79,7 @@ body {
     font-size: 20px;
     padding: 0px 15px;
     font-weight: 400;
-    transition: left .5s ease-in-out;
+    transition: left .2s ease-in-out;
 }
 
 .nav-links li a:hover,
@@ -89,7 +89,7 @@ body {
 .nav-links span:hover {
     text-decoration: none;
     color: var(--brown);
-    transition: left .5s ease-in-out;
+    transition: left .2s ease-in-out;
 }
 
 li::marker {
@@ -201,7 +201,7 @@ li a {
 
 .toggle.is-active .line2 {
     opacity: 0;
-    transition: all .5s ease-out;
+    transition: all .2s ease-out;
 }
 
 .toggle.is-active .line1 {
@@ -221,7 +221,7 @@ li a {
     background-color: var(--light);
     z-index: 9;
     top: 0;
-    transition: all .5s ease-in-out;
+    transition: all .2s ease-in-out;
     left: 0;
     right: 0;
     padding: 20px 0px;
@@ -358,13 +358,13 @@ section {
 .topic-button {
     font-family: 'Jost';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 18px;
     line-height: 22px;
     display: flex;
     align-items: center;
     text-align: center;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.04em;
     color: var(--lightGray);
     border: none;
     background-color: transparent;
@@ -477,7 +477,7 @@ button {
 
 .images {
     width: 700px;
-    height: 500px;
+    min-height: 653px;
     background: var(--gray);
     border-radius: 0px 326.5px 0px 123px;
     background-image: url(../img/Photo.jpg);
@@ -503,13 +503,13 @@ button {
     color: var(--thinLight);
     margin: 0 auto;
     text-align: center;
-    padding: 70px 0px 20px;
+    padding: 88px 0px 0px;
     width: 547px;
 }
 
 .testimonial-contect {
     display: grid;
-    padding: 20px 20px 50px;
+    padding: 38px 24px 58px;
     gap: 30px;
     grid-template-columns: 1fr 1fr 1fr;
 }
@@ -517,8 +517,8 @@ button {
 .testimonial-text {
     background: var(--light);
     border-radius: 22px;
-    padding: 20px;
-    height: 230px;
+    padding: 53px 37px 0px;
+    height: 287px;
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -560,6 +560,8 @@ button {
     align-items: center;
     letter-spacing: 0.01em;
     color: var(--lightGray);
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 /* client-logo */
@@ -663,6 +665,7 @@ button {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin: 0px 0px 15px;
 }
 
 .project-text h4,
@@ -717,12 +720,15 @@ button.project-btn {
 .counter {
     background-color: var(--multiple);
     margin: 100px auto;
+    height: 457px;
+    display: flex;
+    align-items: center;
 }
 
 .counter-details {
     display: flex;
     justify-content: space-evenly;
-    padding: 50px 0px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -805,7 +811,7 @@ button.project-btn {
     text-align: center;
     letter-spacing: 0.01em;
     margin: 0px;
-    width: 800px;
+    width: 810px;
 }
 
 .blog-img img {
@@ -839,7 +845,7 @@ button.project-btn {
 }
 
 .blog-img {
-    padding: 20px;
+    padding: 20px 20px 21px;
 }
 
 .blog-text-container {
@@ -847,17 +853,17 @@ button.project-btn {
     box-shadow: 0px 10px 30px var(--rgbColor);
     border-radius: 62px;
     text-align: center;
-    transition: all .5s ease-in-out;
+    transition: all .2s ease-in-out;
 }
 
 .blog-text-container:hover {
     background-color: var(--multiple);
-    transition: all .5s ease-in-out;
+    transition: all .2s ease-in-out;
 }
 
 .blog-text-container:hover .project-btn1 {
     background-color: var(--light);
-    transition: all .5s ease-in-out;
+    transition: all .2s ease-in-out;
 }
 
 .blog-img-text h4 {
@@ -869,8 +875,7 @@ button.project-btn {
     letter-spacing: 0.02em;
     color: var(--thinLight);
     text-align: left;
-    margin-left: 25px;
-    margin-right: 25px;
+    margin: 0px 25px 30px;
 }
 
 .homepage-btn {
@@ -910,7 +915,7 @@ button.project-btn {
     justify-content: center;
     align-items: center;
     border-radius: 100%;
-    transition: all .5s ease-in-out;
+    transition: all .2s ease-in-out;
 }
 
 /* contact-page */
@@ -924,7 +929,8 @@ button.project-btn {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 60px 0px;
+    height: 374px;
+    justify-content: center;
 }
 
 /* footer */
@@ -1070,7 +1076,7 @@ hr {
     align-items: center;
     letter-spacing: 0.02em;
     color: var(--thinLight);
-    margin-bottom: 22px;
+    margin-bottom: 30px;
 }
 
 .sub-section-text {
@@ -1094,12 +1100,12 @@ hr {
     padding: 10px 15px;
     border-radius: 100%;
     cursor: pointer;
-    transition: all .5s ease-in-out;
+    transition: all .2s ease-in-out;
 }
 
 .sub-section-btn:hover,
 button.project-btn:hover {
-    transition: all .5s ease-in-out;
+    transition: all .2s ease-in-out;
     background-color: var(--brown);
     color: var(--light);
 }
@@ -1128,12 +1134,12 @@ button.project-btn:hover {
     border: 1px solid var(--darkWhite);
     box-shadow: 0px 10px 30px var(--rgbColor);
     border-radius: 62px;
-    transition: all .5s ease-in-out;
+    transition: all .2s ease-in-out;
 }
 
 .card-details:hover {
     background-color: var(--multiple);
-    transition: all .5s ease-in-out;
+    transition: all .2s ease-in-out;
 }
 
 .cards {
@@ -1148,12 +1154,16 @@ button.project-btn:hover {
 }
 
 .changeMargin {
-    margin-top: 23px;
+    margin: 23px 0px 44px;
+}
+
+.main-section-heading {
+    margin-bottom: 50px;
 }
 
 .card-details:hover .sub-section-btn {
     background-color: var(--light);
-    transition: all .5s ease-in-out;
+    transition: all .2s ease-in-out;
     color: var(--thinLight);
 }
 
@@ -1528,7 +1538,7 @@ span.current.prev {
     display: flex;
     margin: 24px 0px 44px;
     flex-direction: column;
-    gap: 31px;
+    gap: 32px;
 }
 
 .blog-point {
@@ -1549,8 +1559,14 @@ span.current.prev {
 .blog-details {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 55px;
+    gap: 57px;
     margin: 100px auto 0px;
+}
+
+.blogdetails-heading {
+    margin: 27px 0px 0px;
+    display: flex;
+    align-items: flex-start;
 }
 
 .blog-line {
@@ -1877,7 +1893,6 @@ span.current.prev {
     letter-spacing: 0.01em;
     color: var(--thinLight);
     width: 100%;
-    margin-bottom: 20px;
     display: inline-block;
 }
 
@@ -1911,7 +1926,7 @@ span.current.prev {
     width: 500px;
     display: none;
     margin: 0px auto 30px;
-    transition: all .5s ease-in-out;
+    transition: all .2s ease-in-out;
 }
 
 .section-img img {
@@ -1932,7 +1947,7 @@ span.current.prev {
 
 .accordion-item.active-menu .panel {
     display: block;
-    transition: all .5s ease-in-out;
+    transition: all .2s ease-in-out;
 }
 
 .accordion-item.active-menu .accoridon-button {
@@ -1956,7 +1971,7 @@ span.current.prev {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 68px 47px;
+    height: 357px;
     gap: 10px;
     margin: 100px auto;
 }
@@ -2060,12 +2075,13 @@ span.current.prev {
 
 .font-container {
     display: flex;
-    margin-bottom: 50px;
+    margin-bottom: 58px;
     padding: 0px;
 }
 
 .font-styling {
     margin: 0 auto;
+    width: 1106px;
 }
 
 .link {
@@ -2421,12 +2437,12 @@ span a {
     content: "\f0da";
     font-size: 60px;
     color: var(--brown);
-    transition: all .5s ease-in-out;
+    transition: all .2s ease-in-out;
 }
 
 .pause-btn::after {
     content: "\f04c";
-    transition: all .5s ease-in-out;
+    transition: all .2s ease-in-out;
 }
 
 .video-image video {
@@ -2455,6 +2471,10 @@ span a {
 
 .points {
     margin: 100px auto;
+}
+
+.blogdetails-point {
+    margin: 24px 0px;
 }
 
 .points-container {
@@ -2574,7 +2594,7 @@ span a {
     border-radius: 18px;
     padding: 26px 37px;
     color: var(--light);
-    margin-top: 30px;
+    margin-top: 32px;
     font-family: 'Jost';
     font-weight: 400;
     font-size: 18px;
@@ -3022,9 +3042,14 @@ span a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 68px 47px;
+    height: 670px;
     gap: 10px;
     margin: 100px auto;
+}
+
+.licence-con {
+    height: 472px;
+    padding: 0px;
 }
 
 .licence-changelog-heading {
@@ -3114,13 +3139,13 @@ span a {
     outline: none;
     background: var(--light);
     border-radius: 18px;
-    transition: all .5s ease-in-out;
+    transition: all .2s ease-in-out;
 }
 
 .tab-btn-active {
     background-color: var(--brown);
     color: var(--light);
-    transition: all .5s ease-in-out;
+    transition: all .2s ease-in-out;
 }
 
 .tab-content {
@@ -3254,12 +3279,12 @@ span a {
 .btn-icon-team:before {
     font-family: FontAwesome;
     content: "\f067";
-    transition: all .5s ease-in-out;
+    transition: all .2s ease-in-out;
 }
 
 .accordion-item2.active-menu .btn-icon-team:before {
     content: "\f068";
-    transition: all .5s ease-in-out;
+    transition: all .2s ease-in-out;
 }
 
 .accordion-item2.active-menu {
@@ -3271,7 +3296,7 @@ span a {
 
 .accordion-item2.active-menu .panel {
     display: block;
-    transition: all .5s ease-in-out;
+    transition: all .2s ease-in-out;
     margin: 0px 22px;
     width: 427px;
 }
@@ -3372,9 +3397,7 @@ span a {
     width: 100%;
     max-width: 100%;
     overflow: hidden;
-    left: 0;
-    right: 0;
-    position: fixed;
+    box-shadow: 0px 10px 50px var(--rgba);
 }
 
 .img-overlay {
@@ -3424,7 +3447,7 @@ span a {
 }
 
 .zoom-img-overlay div {
-    transition: all 0.5s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 .close-btn {
@@ -3458,13 +3481,12 @@ span a {
 .flip-front {
     width: 100%;
     text-align: center;
-    transition: transform 0.6s;
+    transition: transform 0.2s;
     transform-style: preserve-3d;
 }
 
 .flip-img {
     background-color: transparent;
-    width: 300px;
 }
 
 .team-image1,
@@ -3529,7 +3551,7 @@ span a {
 
     .nav-links {
         display: none;
-        transition: all .5s ease-in-out;
+        transition: all .2s ease-in-out;
         position: relative;
     }
 
@@ -3562,6 +3584,10 @@ span a {
         align-items: center;
     }
 
+    .banner-intro {
+        width: 100%;
+    }
+
     .intro-heading {
         font-size: 20px;
         margin: 0px;
@@ -3570,6 +3596,7 @@ span a {
     .intro-peragraph {
         font-size: 16px;
         margin: 0px;
+        text-align: center;
         width: 100%;
     }
 
@@ -3644,6 +3671,7 @@ span a {
     .homepage-img img {
         width: 100%;
         margin: 0px;
+        height: auto;
     }
 
     .first-counter {
@@ -3775,6 +3803,41 @@ span a {
 
     .licence-changelog-container {
         padding: 20px;
+        height: auto;
+    }
+
+    .changelog-text-container {
+        text-align: center;
+    }
+
+    .licence-con {
+        height: auto;
+        padding: 30px 20px;
+    }
+
+    .zoom-img-overlay .popup img {
+        height: auto;
+    }
+
+    .project-details-heading {
+        font-size: 18px;
+    }
+
+    .main-content-btn {
+        margin-top: 30px;
+    }
+
+    .rightSide-tag {
+        margin-bottom: 30px;
+    }
+
+    .form-contactUs {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mail-heading {
+        text-align: center !important;
     }
 
     .sub-section-heading {
@@ -3856,7 +3919,7 @@ span a {
     }
 
     .toggle {
-        transition: all .5s ease-in-out;
+        transition: all .2s ease-in-out;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -3876,7 +3939,7 @@ span a {
         right: 0;
         padding: 30px 0px 0px;
         text-align: center;
-        transition: all .5s ease-in-out;
+        transition: all .2s ease-in-out;
         flex-direction: column;
     }
 
@@ -4225,6 +4288,18 @@ span a {
 
     .blog-img {
         padding: 20px 0px;
+    }
+
+    .testimonial-text {
+        padding: 20px;
+    }
+
+    .testimonial-contect {
+        padding: 10px;
+    }
+
+    .font-styling {
+        width: 100%;
     }
 }
 
