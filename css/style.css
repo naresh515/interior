@@ -822,7 +822,7 @@ button.project-btn {
 .blog-btn {
     position: absolute;
     z-index: 1;
-    margin: 250px 0px 0px 50px;
+    margin: 228px 0px 0px 40px;
     font-family: 'Jost';
     font-style: normal;
     font-weight: 400;
@@ -3428,6 +3428,10 @@ span a {
     width: 40px !important;
 }
 
+.card-btn {
+    margin: 228px 0px 0px 20px;
+}
+
 @media screen and (min-width: 320px) and (max-width: 900px) {
     .mega {
         position: unset;
@@ -3757,6 +3761,16 @@ span a {
         display: grid;
         grid-template-columns: 1fr 1fr;
         justify-items: center;
+        align-items: center;
+    }
+
+    .footer-text-link li {
+        text-align: center;
+    }
+
+    .footer-logo-text {
+        justify-content: center;
+        text-align: center;
     }
 
     .copyright-text span {
@@ -4121,6 +4135,18 @@ span a {
         gap: 20px;
         overflow: scroll;
         height: 138px;
+    }
+
+    .blog-btn {
+        margin: 180px 0px 0px 40px;
+    }
+
+    .card-btn {
+        margin: 200px 0px 0px 20px;
+    }
+
+    .blog-img {
+        padding: 20px 0px;
     }
 }
 
