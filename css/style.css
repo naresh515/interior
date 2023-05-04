@@ -3572,25 +3572,13 @@ span a {
         width: 100%;
     }
 
-    .work-details-img img,
-    .video-image video,
-    .content-img img,
-    .banner-image img,
-    .images,
-    .project-img-01 img,
-    .project-img-02 img,
-    .project-img-03 img,
-    .project-img-04 img,
-    .blog-img img,
-    .pagination-img img,
-    .card-img img,
-    .content-img img,
-    .team-image img,
-    .team-image1 img,
-    .team-image2 img,
-    .team-image3 img,
-    .team-mamber {
+    .inerno-img img {
         object-fit: cover;
+    }
+
+    .mega-menu:hover .mega {
+        margin: 0px;
+        padding: 30px 0px;
     }
 
     .sub-section-img img,
