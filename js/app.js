@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    var isScrolled = false;
     const sticky = $('.nav');
 
 
@@ -38,7 +39,44 @@ $(document).ready(function () {
         else {
             sticky.removeClass('fixed');
         }
+        if (scroll >= 4000 && isScrolled == false) {
+            isScrolled = true
+            $('.count').each(function () {
+                var countValue = parseInt($(this).text());
+                $(this).prop('Counter', 0).animate({
+                    Counter: countValue
+                }, {
+                    duration: 3000,
+                    easing: 'swing',
+                    step: function (now) {
+                        $(this).text(Math.ceil(now));
+                    }
+                });
+            });
+        }
     });
+
+    $('.btn-group').click(function () {
+        $('.btn-group').removeClass("tags-btn");
+        $(this).addClass("tags-btn")
+    })
+    $('.tag-btn-bottom').click(function () {
+        $('.tag-btn-bottom').removeClass("tags-btn");
+        $(this).addClass("tags-btn")
+    })
+
+    $('.popup').click(function () {
+        $(".img-overlay").addClass("img-overlay-open");
+        $(this).clone().appendTo(".zoom-img-overlay");
+        $("body").addClass("remove-scroll");
+    });
+
+    $(".close-btn").click(function () {
+        $(".img-overlay").removeClass("img-overlay-open");
+        $(".zoom-img-overlay").empty();
+        $("body").removeClass("remove-scroll");
+    });
+
     $('.client-logo-img').slick({
         slidesToShow: 4,
         slidesToScroll: 1,
@@ -49,18 +87,6 @@ $(document).ready(function () {
         infinite: true,
         cssEase: 'linear'
     })
-    $('.count').each(function () {
-        var countValue = parseInt($(this).text());
-        $(this).prop('Counter', 0).animate({
-            Counter: countValue
-        }, {
-            duration: 3000,
-            easing: 'swing',
-            step: function (now) {
-                $(this).text(Math.ceil(now));
-            }
-        });
-    });
 
     $(".play-btn").click(function () {
         $(".play-btn").toggleClass("pause-btn")
@@ -69,8 +95,8 @@ $(document).ready(function () {
 
 function videoPlay() {
     if (video.paused || video.ended) {
-		video.play();
-	} else {
-		video.pause();
-	}
+        video.play();
+    } else {
+        video.pause();
+    }
 }

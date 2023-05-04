@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interior Design Webflow Website</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
@@ -24,7 +24,25 @@
                         <div class="navbar">
                             <ul class="nav-links">
                                 <li><a href="./homepage.html">Home</a></li>
-                                <li><a href="./about.html">Pages</a></li>
+                                <li class="mega-menu">
+                                    <span class="mega-menu-item">Pages</span>
+                                    <div class="mega-menu-content">
+                                        <ul class="mega">
+                                            <li><a href="./about.html">About</a></li>
+                                            <li><a href="./blogDetails.html">Blog Details</a></li>
+                                            <li><a href="./projectDetails.html">Project Details</a></li>
+                                            <li><a href="./serviceSingle.html">Service Single</a></li>
+                                            <li><a href="./team.html">Team</a></li>
+                                            <li><a href="./teamSingle.html">Member Profile</a></li>
+                                            <li><a href="./licence.html">Licence</a></li>
+                                            <li><a href="./faq's.html">Faq's</a></li>
+                                            <li><a href="./price.html">Price</a></li>
+                                            <li><a href="./password.html">Password</a></li>
+                                            <li><a href="./404.html">Not Found</a></li>
+                                            <li><a href="./changelog.html">Changelog</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
                                 <li><a href="./service.html">Service</a></li>
                                 <li><a href="./project.html">Project</a></li>
                                 <li><a href="./blog.html">Blog</a></li>
@@ -52,7 +70,7 @@
                         <button type="button" class="intro-btn">Get Started<i
                                 class="fa fa-solid fa-arrow-right arrows"></i></button>
                     </div>
-                    <div class="banner-image">
+                    <div class="banner-image inerno-img ">
                         <img src="./img/Photo.png">
                     </div>
                 </div>
@@ -92,10 +110,10 @@
                             that it has a more-or-less normal.</p>
                         <div class="outside">
                             <div class="em-service-icon">
-                                <i class="fa-solid fa-phone-volume arrows"></i>
+                                <img src="./img/Call.svg">
                             </div>
                             <div class="contact">
-                                <P>012345678</P>
+                                <p><a href="tel:012345678">012345678</a></P>
                                 <h3>Call Us Anytime</h3>
                             </div>
                         </div>
@@ -103,7 +121,7 @@
                                 class="fa fa-solid fa-arrow-right arrows"></i></button>
                     </div>
                     <div class="about-img">
-                        <div class="images"></div>
+                        <div class="images inerno-img"></div>
                     </div>
                 </div>
 
@@ -231,111 +249,108 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="counter">
-                    <div class="counter-details">
-                        <div class="first-counter">
-                            <div class="counter-text">
-                                <h4 class="count">12</h4>
-                                <span class="counter-active">Years Of Experiance</span>
-                            </div>
+        </div>
+        <div class="counter">
+            <div class="counter-details">
+                <div class="first-counter">
+                    <div class="counter-text">
+                        <h4 class="count">12</h4>
+                        <span class="counter-active">Years Of Experiance</span>
+                    </div>
+                </div>
+                <div class="counter-line">
+                    <span></span>
+                </div>
+                <div class="first-counter">
+                    <div class="counter-text">
+                        <h4 class="count">85</h4>
+                        <span class="counter-active">Success Project</span>
+                    </div>
+                </div>
+                <div class="counter-line">
+                    <span></span>
+                </div>
+                <div class="first-counter">
+                    <div class="counter-text">
+                        <h4 class="count">15</h4>
+                        <span class="counter-active">Active Project</span>
+                    </div>
+                </div>
+                <div class="counter-line">
+                    <span></span>
+                </div>
+                <div class="first-counter">
+                    <div class="counter-text">
+                        <h4 class="count">95</h4>
+                        <span class="counter-active">Happy CUstomers</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="blog">
+                <div class="blog-heading">
+                    <h4>Articles & News</h4>
+                    <span>It is a long established fact that a reader will be distracted by the of readable content
+                        of a page when lookings at its layouts the points of using.</span>
+                </div>
+                <div class="blog-content">
+                    <div class="blog-text-container">
+                        <button class="blog-btn" type="button">Kitchan Design</button>
+                        <div class="blog-img">
+                            <img src="./img/Photo (4).png">
                         </div>
-                        <div class="counter-line">
-                            <span></span>
+                        <div class="blog-img-text">
+                            <h4>Let’s Get Solution For Building Construction Work</h4>
                         </div>
-                        <div class="first-counter">
-                            <div class="counter-text">
-                                <h4 class="count">85</h4>
-                                <span class="counter-active">Success Project</span>
-                            </div>
+                        <div class="blog-date">
+                            <span>26 December,2022 </span>
+                            <button type="button" class="project-btn1"><i
+                                    class="fa fa-solid fa-angle-right"></i></button>
                         </div>
-                        <div class="counter-line">
-                            <span></span>
+                    </div>
+                    <div class="blog-text-container bg-color">
+                        <button class="blog-btn" type="button">Living Design</button>
+                        <div class="blog-img">
+                            <img src="./img/Photo (5).png">
                         </div>
-                        <div class="first-counter">
-                            <div class="counter-text">
-                                <h4 class="count">15</h4>
-                                <span class="counter-active">Active Project</span>
-                            </div>
+                        <div class="blog-img-text">
+                            <h4>Let’s Get Solution For Building Construction Work</h4>
                         </div>
-                        <div class="counter-line">
-                            <span></span>
+                        <div class="blog-date">
+                            <span>26 December,2022 </span>
+                            <button type="button" class="project-btn1 bg-btn"><i
+                                    class="fa fa-solid fa-angle-right"></i></button>
                         </div>
-                        <div class="first-counter">
-                            <div class="counter-text">
-                                <h4 class="count">95</h4>
-                                <span class="counter-active">Happy CUstomers</span>
-                            </div>
+                    </div>
+                    <div class="blog-text-container">
+                        <button class="blog-btn" type="button">Interior Design</button>
+                        <div class="blog-img">
+                            <img src="./img/Photo (6).png">
                         </div>
-                        <div class="counter-line">
-                            <span></span>
+                        <div class="blog-img-text">
+                            <h4>Let’s Get Solution For Building Construction Work</h4>
+                        </div>
+                        <div class="blog-date">
+                            <span>26 December,2022 </span>
+                            <button type="button" class="project-btn1"><i
+                                    class="fa fa-solid fa-angle-right"></i></button>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div class="blog">
-                    <div class="blog-heading">
-                        <h4>Articles & News</h4>
-                        <span>It is a long established fact that a reader will be distracted by the of readable content
-                            of a page when lookings at its layouts the points of using.</span>
+            <div class="contact-page">
+                <div class="contact-container">
+                    <div class="contact-text">
+                        <h4>Wanna join the interno?</h4>
+                        <span>It is a long established fact will be distracted.</span>
                     </div>
-                    <div class="blog-content">
-                        <div class="blog-text-container">
-                            <button class="blog-btn" type="button">Kitchan Design</button>
-                            <div class="blog-img">
-                                <img src="./img/Photo (4).png">
-                            </div>
-                            <div class="blog-img-text">
-                                <h4>Let’s Get Solution For Building Construction Work</h4>
-                            </div>
-                            <div class="blog-date">
-                                <span>26 December,2022 </span>
-                                <button type="button" class="project-btn1"><i
-                                        class="fa fa-solid fa-angle-right"></i></button>
-                            </div>
-                        </div>
-                        <div class="blog-text-container bg-color">
-                            <button class="blog-btn" type="button">Living Design</button>
-                            <div class="blog-img">
-                                <img src="./img/Photo (5).png">
-                            </div>
-                            <div class="blog-img-text">
-                                <h4>Let’s Get Solution For Building Construction Work</h4>
-                            </div>
-                            <div class="blog-date">
-                                <span>26 December,2022 </span>
-                                <button type="button" class="project-btn1 bg-btn"><i
-                                        class="fa fa-solid fa-angle-right"></i></button>
-                            </div>
-                        </div>
-                        <div class="blog-text-container">
-                            <button class="blog-btn" type="button">Interior Design</button>
-                            <div class="blog-img">
-                                <img src="./img/Photo (6).png">
-                            </div>
-                            <div class="blog-img-text">
-                                <h4>Let’s Get Solution For Building Construction Work</h4>
-                            </div>
-                            <div class="blog-date">
-                                <span>26 December,2022 </span>
-                                <button type="button" class="project-btn1"><i
-                                        class="fa fa-solid fa-angle-right"></i></button>
-                            </div>
-                        </div>
-                    </div>
+                    <button type="button" class="contatc-page-btn homepage-btn">
+                        Contact With Us<i class="fa fa-solid fa-arrow-right icon"></i>
+                    </button>
                 </div>
-
-                <div class="contact-page">
-                    <div class="contact-container">
-                        <div class="contact-text">
-                            <h4>Wanna join the interno?</h4>
-                            <span>It is a long established fact will be distracted.</span>
-                        </div>
-                        <button type="button" class="contatc-page-btn homepage-btn">
-                            Contact With Us<i class="fa fa-solid fa-arrow-right icon"></i>
-                        </button>
-                    </div>
-                </div>
+            </div>
             </section>
 
             <footer>
@@ -359,11 +374,11 @@
                             <div class="footer-text-content">
                                 <span class="heading">Pages</span>
                                 <ul class="footer-text-link">
-                                    <li>About Us</li>
-                                    <li>Our Projects</li>
-                                    <li>Our Team</li>
-                                    <li>Contact Us</li>
-                                    <li>Services</li>
+                                    <li><a href="./about.html">About Us</a></li>
+                                    <li><a href="./projectDetails.html">Our Projects</a></li>
+                                    <li><a href="./team.html">Our Team</a></li>
+                                    <li><a href="./contactUs.html">Contact Us</a></li>
+                                    <li><a href="./service.html">Services</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -371,11 +386,11 @@
                             <div class="footer-text-content">
                                 <span class="heading">Services</span>
                                 <ul class="footer-text-link">
-                                    <li>Kitchan</li>
-                                    <li>Living Area</li>
-                                    <li>Bathroom</li>
-                                    <li>Dinning Hall</li>
-                                    <li>Bedroom</li>
+                                    <li><a href="#">Kitchan</a></li>
+                                    <li><a href="#">Living Area</a></li>
+                                    <li><a href="#">Bathroom</a></li>
+                                    <li><a href="#">Dinning Hall</a></li>
+                                    <li><a href="#">Bedroom</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -384,26 +399,29 @@
                                 <span class="heading">Contact</span>
                                 <ul class="footer-text-link footer-text">
                                     <li>55 East Birchwood Ave. Brooklyn, New York 11201</li>
-                                    <li> contact@interno.com</li>
-                                    <li>(123) 456 - 7890</li>
+                                    <li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=contact@interno.com&su=&body="
+                                            target="_blank">contact@interno.com</a></li>
+                                    <li><a href="tel:(123)-456-7890">(123) 456 - 7890</a></li>
                                 </ul>
                             </div>
-                        </div>
-                    </div>
-                    <div class="copyright">
-                        <hr>
-                        <div class="copyright-text">
-                            <span>Copyright © Interno | Designed by Victorflow Templates - Powered by Webflow</span>
                         </div>
                     </div>
                 </div>
             </footer>
         </div>
+        <hr>
+        <div class="container">
+            <div class="copyright">
+                <div class="copyright-text">
+                    <span>Copyright © Interno | Designed by Victorflow Templates - Powered by Webflow</span>
+                </div>
+            </div>
+        </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
-    <script src="./app.js"></script>
+    <script src="./js/app.js"></script>
 </body>
 
 </html>
