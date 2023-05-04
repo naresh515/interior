@@ -3401,7 +3401,7 @@ span a {
     width: 100%;
     max-width: 100%;
     overflow: hidden;
-    box-shadow: 0px 10px 50px var(--rgba);
+    box-shadow: -5px -5px 5px var(--rgba), 5px -5px 5px var(--rgba);
     margin: 50px 0px 0px;
 }
 
