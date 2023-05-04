@@ -78,7 +78,7 @@ $(document).ready(function () {
     });
 
     $('.client-logo-img').slick({
-        slidesToShow: 4,
+        slidesToShow: 8,
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 500,
