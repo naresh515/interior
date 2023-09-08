@@ -3402,7 +3402,7 @@ span a {
     max-width: 100%;
     overflow: hidden;
     box-shadow: -5px -5px 5px var(--rgba), 5px -5px 5px var(--rgba);
-    margin: 50px 0px 0px;
+    margin: 10px 0px 0px;
 }
 
 .img-overlay {
